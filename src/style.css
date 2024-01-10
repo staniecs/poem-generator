@@ -40,14 +40,14 @@ form {
 }
 
 .poem {
-  padding: 15px;
+  padding: 5px 15px;
   border-left: 3px solid #dcd6f7;
   background-color: white;
   line-height: 1.5;
-  margin-bottom: 20px;
 }
 
 footer {
+  margin-top: 20px;
   font-size: 14px;
   text-align: center;
 }
