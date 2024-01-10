@@ -1,3 +1,57 @@
+:root {
+  --primary-color: #424874;
+}
+
+body {
+  background-color: #f4eeff;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
 h1 {
-  color: magenta;
+  color: var(--primary-color);
+  font-size: 45px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.poem-topic {
+  width: 80%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.generate-button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #a6b1e1;
+  border: 1px solid var(--primary-color);
+  font-size: 14px;
+}
+
+.poem {
+  padding: 15px;
+  border-left: 3px solid #dcd6f7;
+  background-color: white;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+}
+
+a {
+  color: var(--primary-color);
 }
