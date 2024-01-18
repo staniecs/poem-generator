@@ -17,6 +17,11 @@ function generatePoem(event) {
   let context = `You are an author of childrens poems.  Please write a poem that is appropriate for children under 10 years old. Please provide the poem using standard HTML, with <br/> at the end of each line, and no title.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement =
+    document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">I'm writing your poem about ${userInput.value}...!</div>`;
+
   axios.get(apiUrl).then(displayPoem);
   console.log("generating");
   console.log(`${prompt}`);

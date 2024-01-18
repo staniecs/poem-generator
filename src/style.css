@@ -16,10 +16,14 @@ h1 {
   font-size: 45px;
   text-align: center;
 }
-
+.form-wrapper {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
 form {
   display: flex;
-  margin-bottom: 20px;
 }
 
 .poem-topic {
@@ -38,12 +42,22 @@ form {
   border: 1px solid var(--primary-color);
   font-size: 14px;
 }
-
+.example {
+  line-height: 1.5;
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 5px;
+  margin-left: 5px;
+}
 .poem {
   padding: 5px 15px;
   border-left: 3px solid #dcd6f7;
   background-color: white;
   line-height: 1.5;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
@@ -54,4 +68,20 @@ footer {
 
 a {
   color: var(--primary-color);
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start)
+    infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
